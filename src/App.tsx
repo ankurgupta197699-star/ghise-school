@@ -154,29 +154,18 @@ export default function App() {
     return <AdminPortal />;
   }
 
-  return (
+return (
     <div className="min-h-screen bg-white">
-      {/* MASSIVE EMERGENCY EXPORT BUTTON */}
-      <button 
-        onClick={loadCode}
-        className="fixed top-0 left-0 w-full z-[99999] bg-red-600 text-white font-bold text-xl text-center py-6 shadow-2xl animate-pulse block hover:bg-red-700 underline"
-      >
-        ⚠️ CLICK HERE TO VIEW AND COPY THE FULL WEBSITE CODE ⚠️
-      </button>
-      
-      {/* Push content down so the banner doesn't hide the navbar */}
-      <div className="pt-20">
-        <Navbar />
-        <main>
-          <Hero />
-          <AboutSection />
-          <AcademicsSection />
-          <AdmissionForm />
-          <SupportSection />
-          <ContactSection />
-        </main>
-        <Footer />
-      </div>
+      <Navbar />
+      <main>
+        <Hero />
+        <AboutSection />
+        <AcademicsSection />
+        <AdmissionForm />
+        <SupportSection />
+        <ContactSection />
+      </main>
+      <Footer />
     </div>
   );
 }
